@@ -2,6 +2,7 @@ package com.springboot.app.item.models.service;
 
 import com.springboot.app.item.clientes.ProductoClienteRest;
 import com.springboot.app.item.models.Item;
+import com.springboot.app.item.models.Producto;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,4 +25,20 @@ public class ItemServiceFeign implements ItemsService {
   public Item findById(Long id, Integer cantidad) {
     return new Item(productoClienteRest.detalle(id), cantidad);
   }
+
+  @Override
+  public Producto save(Producto producto) {
+    return productoClienteRest.crear(producto);
+  }
+
+  @Override
+  public Producto update(Producto producto, Long id) {
+    return productoClienteRest.editar(producto,id);
+  }
+
+  @Override
+  public void delete(Long id) {
+    productoClienteRest.deleteById(id);
+  }
+
 }

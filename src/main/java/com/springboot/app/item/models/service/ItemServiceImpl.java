@@ -1,7 +1,7 @@
 package com.springboot.app.item.models.service;
 
 import com.springboot.app.item.models.Item;
-import com.springboot.app.item.models.Producto;
+import com.springboot.app.commons.models.entity.Producto;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;

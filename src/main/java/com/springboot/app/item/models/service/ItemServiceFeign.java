@@ -2,7 +2,7 @@ package com.springboot.app.item.models.service;
 
 import com.springboot.app.item.clientes.ProductoClienteRest;
 import com.springboot.app.item.models.Item;
-import com.springboot.app.item.models.Producto;
+import com.springboot.app.commons.models.entity.Producto;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;

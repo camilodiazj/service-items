@@ -1,8 +1,8 @@
 package com.springboot.app.item.controllers;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.springboot.app.commons.models.entity.Producto;
 import com.springboot.app.item.models.Item;
-import com.springboot.app.item.models.Producto;
 import com.springboot.app.item.models.service.ItemsService;
 import java.util.HashMap;
 import java.util.List;
